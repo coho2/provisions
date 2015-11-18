@@ -1,0 +1,168 @@
+@media all and (min-width: 320px) {
+
+.homeLogo {
+	width: 180px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+
+}
+
+.homeNav {
+	display: block;
+	text-align: center;
+}
+
+header img {
+	width: 180px;
+	display: block;
+	padding: 10px;
+}
+
+.showcase img {
+	width: 100%;
+}
+
+.showcase-padding {
+	padding: 20px;
+}
+
+nav {
+	background-color: #ffffff;
+	display: none;
+}
+
+nav ul li {
+	border-bottom: 1px solid #4F2211;
+}
+
+nav ul li a {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 18px;
+	color: purple;
+	padding: 20px;
+	display: inline-block;
+	text-decoration: none; 
+	font-weight: 700;
+	width: 100%;
+}
+
+#navBtn {
+	width: 40px;
+	height: 40px;
+	line-height: 40px; 
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	text-align: center;
+	color: purple;
+	border: 1px solid purple;
+
+
+	}
+
+nav ul li:hover {
+		background-color: #E4ADFF;
+	}
+
+h1 {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 10px;
+}
+
+h2 {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 10px;
+}
+
+p {
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
+	padding: 10px;
+}
+
+.photoGrid img {
+	width: 100%;
+}
+
+aside img {
+	width: 100%;
+}
+
+.clearfix {
+	clear: both;
+}
+
+footer p {
+	background-color: #E4ADFF;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+	padding: 20px;
+}	
+
+
+
+} /*------END MOBILE STYLES-----*/
+
+@media all and (min-width: 700px) {
+
+
+#navBtn {
+	display: none;
+}
+
+header img {
+	float: left;
+}
+
+.homeLogo {
+	width: 180px;
+	display: block;
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+
+}
+
+nav {
+	display: block;
+	float: right;
+	margin-top: 100px;
+}
+
+nav ul li {
+	display: inline-block;
+	border: 0px;
+}
+
+main {
+	width: 65%;
+	float: left;
+}
+
+aside {
+	width: 35%;
+	float: right;
+}
+
+} /*------END TABLET STYLES------*/
+
+@media all and (min-width: 980px) {
+
+.container {
+	width: 960px;
+	margin: 0px auto;
+}
+
+} /*-----END DESKTOP STYLES-----*/
