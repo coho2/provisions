@@ -17,6 +17,8 @@
 header img {
 	width: 180px;
 	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 10px;
 }
 
@@ -38,7 +40,7 @@ nav ul li {
 }
 
 nav ul li a {
-	font-family: 'Open Sans', Arial, sans-serif;
+	font-family: 'Slabo 13px', Arial, sans-serif;
 	font-size: 18px;
 	color: purple;
 	padding: 20px;
@@ -89,16 +91,70 @@ p {
 	padding: 10px;
 }
 
-.photoGrid img {
+/*.photoGrid img {
 	width: 100%;
+} */
+
+aside {
+	padding: 10px;
 }
 
 aside img {
 	width: 100%;
 }
 
+aside iframe {
+	width: 100%;
+}
+
 .clearfix {
 	clear: both;
+}
+
+.slider-crop {
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+	position: relative; /* --- needs to be defined to the CHILD, #slider previous, can define the absolue position it should live at */
+}
+
+
+.sliderBtn {
+	width: 60px;
+	height: 60px;
+	background-color: rgba(0,0,0,.6); /* 4th value (a, alpha) is opacity, so .6=60% */
+	position: absolute;
+	top: 140px;
+	z-index: 500; /* z is Z AXIS and positions element in it's appropriate layer */
+	font-size: 30px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 60px;
+	cursor: pointer; /* changes the mouse to a different cursor when hovering */
+
+}
+
+#slider-previous {
+	left: 0px;
+}
+
+#slider-next {
+	right: 0px;
+}
+
+ul.gallery-slider {
+	width: 2500px;
+	
+}
+
+ul.gallery-slider li {
+	width: 500px;
+	float: left;
+
+}
+
+ul.gallery-slider li img {
+	width: 100%;
 }
 
 footer p {
@@ -114,7 +170,7 @@ footer p {
 
 } /*------END MOBILE STYLES-----*/
 
-@media all and (min-width: 700px) {
+@media all and (min-width: 793px) {
 
 
 #navBtn {
@@ -125,7 +181,7 @@ header img {
 	float: left;
 }
 
-.homeLogo {
+img.homeLogo {
 	width: 180px;
 	display: block;
 	clear: both;
@@ -146,19 +202,26 @@ nav ul li {
 	border: 0px;
 }
 
-main {
-	width: 65%;
-	float: left;
+main.showcase {
+	width: 100%;
 }
 
+main {
+	width: 53%;
+	float: left;
+}
+.photoGrid {
+	padding-top: 100px;
+}
 aside {
-	width: 35%;
+	width: 42%;
 	float: right;
+	padding: 10px;
 }
 
 } /*------END TABLET STYLES------*/
 
-@media all and (min-width: 980px) {
+@media all and (min-width: 960px) {
 
 .container {
 	width: 960px;
